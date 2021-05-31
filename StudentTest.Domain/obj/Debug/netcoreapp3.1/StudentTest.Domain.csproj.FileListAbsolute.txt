@@ -1,0 +1,9 @@
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\bin\Debug\netcoreapp3.1\StudentTest.Domain.deps.json
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\bin\Debug\netcoreapp3.1\StudentTest.Domain.dll
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.AssemblyInfoInputs.cache
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.AssemblyInfo.cs
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\bin\Debug\netcoreapp3.1\StudentTest.Domain.pdb
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.csproj.CoreCompileInputs.cache
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.dll
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.pdb
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.Domain\obj\Debug\netcoreapp3.1\StudentTest.Domain.csprojAssemblyReference.cache

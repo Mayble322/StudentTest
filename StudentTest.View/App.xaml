@@ -1,0 +1,30 @@
+﻿<Application x:Class="StudentTest.View.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:StudentTest.View"
+             xmlns:viewmodels="clr-namespace:StudentTest.View.ViewModels"
+             xmlns:views="clr-namespace:StudentTest.View.Views"
+             xmlns:views2="clr-namespace:StudentTest.View.Views"
+             xmlns:views3="clr-namespace:StudentTest.View.Views"
+             xmlns:views4="clr-namespace:StudentTest.View.Views">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
+                <views:Login />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:MainViewModel}">
+                <views2:MainView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:AdminViewModel}">
+                <views3:AdminView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:UserViewModel}">
+                <views4:UserView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

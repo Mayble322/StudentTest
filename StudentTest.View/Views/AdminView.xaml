@@ -1,0 +1,445 @@
+﻿<UserControl x:Class="StudentTest.View.Views.AdminView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StudentTest.View.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="750" d:DesignWidth="1000">
+    <Grid>
+        <Grid x:Name="Category" 
+              Margin="74,38,629,215">
+            <TextBlock 
+                    IsHitTestVisible="False" 
+                    FontFamily="NSimSun"            
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Left"
+                    Margin="0,160,0,0" 
+                    Foreground="DarkRed"
+                    FontSize="16" 
+                    Height="25" 
+                    Width="293"
+                    DataContext="{Binding ErrorMessageViewModel2}"
+                    Text="{Binding Message}"     
+                    Visibility="{Binding HasMessage}">
+
+
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <TextBlock 
+                    IsHitTestVisible="False" 
+                    FontFamily="NSimSun"            
+                    VerticalAlignment="Top" 
+                    HorizontalAlignment="Left"
+                    Margin="556,512,0,0" 
+                    Foreground="DarkRed"
+                    FontSize="16" 
+                    Height="25" 
+                    Width="293"
+                    DataContext="{Binding ErrorMessageViewModel}"
+                    Text="{Binding Message}"     
+                    Visibility="{Binding HasMessage}">
+
+
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <TextBlock 
+                HorizontalAlignment="Left" 
+                Text="Category" 
+                Height="32"
+                Margin="97,10,0,0" 
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Width="106" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center" RenderTransformOrigin="0.689,0.469"/>
+            <TextBox 
+                x:Name = "CategoryBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,79,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding CategoryName, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+
+
+
+            <Button 
+                Content="Creation" 
+                HorizontalAlignment="Left" 
+                Height="24" 
+                Margin="92,131,0,0" 
+                VerticalAlignment="Top" 
+                Width="116" 
+                RenderTransformOrigin="0.495,1.19" 
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}" 
+                Foreground="White" 
+                FontFamily="NSimSun" 
+                FontSize="16"               
+                Command="{Binding CategoryCreationCommand}"/>
+
+
+            <TextBlock 
+                IsHitTestVisible="False" 
+                FontFamily="NSimSun"            
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Left"
+                Margin="-6,160,0,0" 
+                Foreground="DarkRed"
+                FontSize="16" 
+                Height="25" 
+                Width="293"
+                DataContext="{Binding ErrorMessageViewModel}"
+                Text="{Binding Message}"     
+                >
+
+
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+            <TextBox 
+                x:Name = "CountQuestionsBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Center" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding CountQuestions, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+
+
+
+            <Button 
+                Content="CreationCount" 
+                HorizontalAlignment="Left" 
+                Height="24" 
+                Margin="78,287,0,0" 
+                VerticalAlignment="Top" 
+                Width="144" 
+                RenderTransformOrigin="0.495,1.19" 
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}" 
+                Foreground="White" 
+                FontFamily="NSimSun" 
+                FontSize="16"               
+                Command="{Binding CountQuestionsCreationCommand}"/>
+
+            <Button 
+                Content="Get CategoryList" 
+                HorizontalAlignment="Left" 
+                Height="24" 
+                Margin="50,329,0,0" 
+                VerticalAlignment="Top" 
+                Width="200" 
+                RenderTransformOrigin="0.495,1.19" 
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}" 
+                Foreground="White" 
+                FontFamily="NSimSun" 
+                FontSize="16"               
+                Command="{Binding CategoryGetCommand}"/>
+
+            <StackPanel HorizontalAlignment="Left" Margin="50,358,0,23">
+                <UniformGrid Background="White" Columns="1">
+                    <ListBox 
+                            Width="200"
+                            VerticalAlignment="Center"
+                            SelectionMode="Extended"
+                            Grid.Row="1"
+                            HorizontalContentAlignment="Stretch"
+                            Background="Transparent"
+                            ItemsSource = "{Binding GetCollection}"
+                            BorderThickness="0"                  
+                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"                                                     
+                            SelectedItem="{Binding Category}">
+                    </ListBox>
+                </UniformGrid>
+            </StackPanel>
+
+        </Grid>
+
+        <Grid x:Name="Quiz" 
+              Margin="629,38,74,103">
+
+            <TextBlock 
+                HorizontalAlignment="Left" 
+                Text="Quiz" 
+                Height="31.922"
+                Margin="83.529,10,0,0" 
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Width="106.064" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"/>
+
+            <TextBox 
+                x:Name = "QuestionBox"
+                HorizontalAlignment="Left" 
+                Height="34" 
+                Margin="2,99,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding Question, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+
+            <TextBox 
+                x:Name = "AnswerABox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,162,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding AnswerA, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+            <TextBox 
+                x:Name = "AnswerBBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,225,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding AnswerB, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+            <TextBox 
+                x:Name = "AnswerCBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,288,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding AnswerC, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+
+            <TextBox 
+                x:Name = "AnswerDBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,351,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding AnswerD, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+            <TextBox 
+                x:Name = "CorrectAnsBox"
+                HorizontalAlignment="Center" 
+                Height="34" 
+                Margin="0,414,0,0" 
+                TextWrapping="Wrap"  
+                VerticalAlignment="Top" 
+                Width="293" 
+                Foreground="Black" 
+                SelectionBrush="#FF232629" 
+                FontFamily="NSimSun" 
+                FontSize="16" 
+                HorizontalContentAlignment="Left" 
+                VerticalContentAlignment="Center" MaxLength="12"
+                Text="{Binding CorrectAns, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+            <TextBlock 
+                IsHitTestVisible="False" 
+                FontFamily="NSimSun"            
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center"
+                Margin="0,534,0,0" 
+                Foreground="DarkRed"
+                FontSize="16" 
+                Height="25" 
+                Width="293"
+                DataContext="{Binding ErrorMessageViewModel2}"
+                Text="{Binding Message}"     
+                >
+
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <Button 
+                Content="Creation" 
+                HorizontalAlignment="Left" 
+                Height="24" 
+                Margin="84,480,0,0" 
+                VerticalAlignment="Top" 
+                Width="117" 
+                RenderTransformOrigin="0.495,1.19" 
+                Background="{x:Null}" 
+                BorderBrush="{x:Null}" 
+                Foreground="White" 
+                FontFamily="NSimSun" 
+                FontSize="16"               
+                Command="{Binding QuizCreationCommand}"/>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Category Name :"
+                Margin="74,83,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="168"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Count of question :"
+                Margin="74,233,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="199"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Question :"
+                Margin="629,99,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="113"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Answer A :"
+                Margin="629,169,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="113"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Answer B :"
+                Margin="629,232,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="113"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Answer C :"
+                Margin="629,300,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="35" 
+                Width="113"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Answer D :"
+                Margin="629,0,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Center" 
+                Height="26" 
+                Width="113"/>
+        <TextBlock HorizontalAlignment="Left" 
+                Text="Correct Answer :"
+                Margin="629,422,0,0" 
+                Foreground="White" 
+                FontSize="20" 
+                FontFamily="NSimSun" 
+                TextAlignment="Center"
+                TextWrapping="Wrap" 
+                VerticalAlignment="Top" 
+                Height="34" 
+                Width="171"/>
+
+    </Grid>
+</UserControl>

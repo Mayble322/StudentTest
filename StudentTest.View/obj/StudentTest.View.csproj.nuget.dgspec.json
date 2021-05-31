@@ -1,0 +1,226 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.View\\StudentTest.View.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj",
+        "projectName": "StudentTest.Domain",
+        "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj",
+        "packagesPath": "C:\\Users\\10102\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\10102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\StudentTest.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\StudentTest.EF.csproj",
+        "projectName": "StudentTest.EF",
+        "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\StudentTest.EF.csproj",
+        "packagesPath": "C:\\Users\\10102\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\10102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj": {
+                "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.View\\StudentTest.View.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.View\\StudentTest.View.csproj",
+        "projectName": "StudentTest.View",
+        "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.View\\StudentTest.View.csproj",
+        "packagesPath": "C:\\Users\\10102\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.View\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\10102\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj": {
+                "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.Domain\\StudentTest.Domain.csproj"
+              },
+              "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\StudentTest.EF.csproj": {
+                "projectPath": "C:\\Users\\10102\\OneDrive\\Desktop\\Универ\\ТРПЗ\\StudentTest\\StudentTest.EF\\StudentTest.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

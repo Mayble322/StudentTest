@@ -1,0 +1,15 @@
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.Domain.dll
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.csprojAssemblyReference.cache
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.AssemblyInfoInputs.cache
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.AssemblyInfo.cs
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.EF.deps.json
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.EF.runtimeconfig.json
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.EF.runtimeconfig.dev.json
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.EF.dll
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.EF.pdb
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\bin\Debug\netcoreapp3.1\StudentTest.Domain.pdb
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.csproj.CoreCompileInputs.cache
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.csproj.CopyComplete
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.dll
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.pdb
+C:\Users\10102\OneDrive\Desktop\Универ\ТРПЗ\StudentTest\StudentTest.EF\obj\Debug\netcoreapp3.1\StudentTest.EF.genruntimeconfig.cache
